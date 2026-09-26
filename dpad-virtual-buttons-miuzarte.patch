@@ -1,0 +1,93 @@
+diff --git a/app/src/main/java/io/github/miuzarte/scrcpyforandroid/constants/UiAndroidKeycodes.kt b/app/src/main/java/io/github/miuzarte/scrcpyforandroid/constants/UiAndroidKeycodes.kt
+index 3dc7e40..0f2004e 100644
+--- a/app/src/main/java/io/github/miuzarte/scrcpyforandroid/constants/UiAndroidKeycodes.kt
++++ b/app/src/main/java/io/github/miuzarte/scrcpyforandroid/constants/UiAndroidKeycodes.kt
+@@ -12,5 +12,10 @@ internal object UiAndroidKeycodes {
+     const val NOTIFICATION = 83
+     const val SYSRQ = 120 // System Request / Print Screen
+     const val APP_SWITCH = 187
++    const val DPAD_UP = 19
++    const val DPAD_DOWN = 20
++    const val DPAD_LEFT = 21
++    const val DPAD_RIGHT = 22
++    const val DPAD_CENTER = 23
+ }
+ // TODO: customizable virtual keys with any keycode
+diff --git a/app/src/main/java/io/github/miuzarte/scrcpyforandroid/widgets/VirtualButtons.kt b/app/src/main/java/io/github/miuzarte/scrcpyforandroid/widgets/VirtualButtons.kt
+index 61883bd..a09c49a 100644
+--- a/app/src/main/java/io/github/miuzarte/scrcpyforandroid/widgets/VirtualButtons.kt
++++ b/app/src/main/java/io/github/miuzarte/scrcpyforandroid/widgets/VirtualButtons.kt
+@@ -99,6 +99,41 @@ enum class VirtualButtonAction(
+         keycode = UiAndroidKeycodes.APP_SWITCH,
+         behavior = VirtualButtonBehavior.INJECT_KEYCODE,
+     ),
++    DPAD_UP(
++        id = "dpad_up",
++        titleResId = R.string.vb_dpad_up,
++        icon = Icons.Rounded.KeyboardArrowUp,
++        keycode = UiAndroidKeycodes.DPAD_UP,
++        behavior = VirtualButtonBehavior.INJECT_KEYCODE,
++    ),
++    DPAD_DOWN(
++        id = "dpad_down",
++        titleResId = R.string.vb_dpad_down,
++        icon = Icons.Rounded.KeyboardArrowDown,
++        keycode = UiAndroidKeycodes.DPAD_DOWN,
++        behavior = VirtualButtonBehavior.INJECT_KEYCODE,
++    ),
++    DPAD_LEFT(
++        id = "dpad_left",
++        titleResId = R.string.vb_dpad_left,
++        icon = Icons.Rounded.KeyboardArrowLeft,
++        keycode = UiAndroidKeycodes.DPAD_LEFT,
++        behavior = VirtualButtonBehavior.INJECT_KEYCODE,
++    ),
++    DPAD_RIGHT(
++        id = "dpad_right",
++        titleResId = R.string.vb_dpad_right,
++        icon = Icons.Rounded.KeyboardArrowRight,
++        keycode = UiAndroidKeycodes.DPAD_RIGHT,
++        behavior = VirtualButtonBehavior.INJECT_KEYCODE,
++    ),
++    DPAD_CENTER(
++        id = "dpad_center",
++        titleResId = R.string.vb_dpad_center,
++        icon = Icons.Rounded.Adjust,
++        keycode = UiAndroidKeycodes.DPAD_CENTER,
++        behavior = VirtualButtonBehavior.INJECT_KEYCODE,
++    ),
+     MENU(
+         id = "menu",
+         titleResId = R.string.vb_menu,
+diff --git a/app/src/main/res/values-zh/strings.xml b/app/src/main/res/values-zh/strings.xml
+index ce7f5a2..aaf864a 100644
+--- a/app/src/main/res/values-zh/strings.xml
++++ b/app/src/main/res/values-zh/strings.xml
+@@ -323,6 +323,11 @@
+     <string name="vb_home">主页</string>
+     <string name="vb_back">返回</string>
+     <string name="vb_app_switch">多任务</string>
++    <string name="vb_dpad_up">方向键上</string>
++    <string name="vb_dpad_down">方向键下</string>
++    <string name="vb_dpad_left">方向键左</string>
++    <string name="vb_dpad_right">方向键右</string>
++    <string name="vb_dpad_center">确认键 (OK)</string>
+     <string name="vb_menu">菜单</string>
+     <string name="vb_notifications">通知栏</string>
+     <string name="vb_volume_up">音量+</string>
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+index 31db59f..8e81d1c 100644
+--- a/app/src/main/res/values/strings.xml
++++ b/app/src/main/res/values/strings.xml
+@@ -324,6 +324,11 @@
+     <string name="vb_home">Home</string>
+     <string name="vb_back">Back</string>
+     <string name="vb_app_switch">App switch</string>
++    <string name="vb_dpad_up">D-pad up</string>
++    <string name="vb_dpad_down">D-pad down</string>
++    <string name="vb_dpad_left">D-pad left</string>
++    <string name="vb_dpad_right">D-pad right</string>
++    <string name="vb_dpad_center">D-pad center (OK)</string>
+     <string name="vb_menu">Menu</string>
+     <string name="vb_notifications">Notifications</string>
+     <string name="vb_volume_up">Volume up</string>

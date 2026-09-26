@@ -324,6 +324,11 @@
     <string name="vb_home">Home</string>
     <string name="vb_back">Back</string>
     <string name="vb_app_switch">App switch</string>
+    <string name="vb_dpad_up">D-pad up</string>
+    <string name="vb_dpad_down">D-pad down</string>
+    <string name="vb_dpad_left">D-pad left</string>
+    <string name="vb_dpad_right">D-pad right</string>
+    <string name="vb_dpad_center">D-pad center (OK)</string>
     <string name="vb_menu">Menu</string>
     <string name="vb_notifications">Notifications</string>
     <string name="vb_volume_up">Volume up</string>

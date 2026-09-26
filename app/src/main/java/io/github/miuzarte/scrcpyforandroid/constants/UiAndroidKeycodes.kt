@@ -12,5 +12,10 @@ internal object UiAndroidKeycodes {
     const val NOTIFICATION = 83
     const val SYSRQ = 120 // System Request / Print Screen
     const val APP_SWITCH = 187
+    const val DPAD_UP = 19
+    const val DPAD_DOWN = 20
+    const val DPAD_LEFT = 21
+    const val DPAD_RIGHT = 22
+    const val DPAD_CENTER = 23
 }
 // TODO: customizable virtual keys with any keycode

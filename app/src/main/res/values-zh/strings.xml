@@ -323,6 +323,11 @@
     <string name="vb_home">主页</string>
     <string name="vb_back">返回</string>
     <string name="vb_app_switch">多任务</string>
+    <string name="vb_dpad_up">方向键上</string>
+    <string name="vb_dpad_down">方向键下</string>
+    <string name="vb_dpad_left">方向键左</string>
+    <string name="vb_dpad_right">方向键右</string>
+    <string name="vb_dpad_center">确认键 (OK)</string>
     <string name="vb_menu">菜单</string>
     <string name="vb_notifications">通知栏</string>
     <string name="vb_volume_up">音量+</string>
