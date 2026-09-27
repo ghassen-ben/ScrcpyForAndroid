@@ -1,3 +1,4 @@
+
 <!-- markdownlint-disable MD033 -->
 
 # Scrcpy for Android
@@ -7,6 +8,10 @@
 </a>
 
 [scrcpy](https://github.com/Genymobile/scrcpy) android client
+
+This is just a fork from Miuzarte repo (https://github.com/Miuzarte/ScrcpyForAndroid) i really liked what he, and the other Contributors done ^-^
+
+
 
 从通过
 [ADB Wireless](https://developer.android.com/tools/adb?hl=zh-cn#connect-to-a-device-over-wi-fi)
